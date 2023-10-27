@@ -29,7 +29,7 @@ myLibrary.push(book5);
 // Adds books to the library (the myLibrary array).
 function addBookToLibrary(event) {
   event.preventDefault(); // Prevent the default form submission behaviour.
-  alert("Form submitted!");
+  // alert("Form submitted!");
 
   const title = document.querySelector('#book-title').value;
   const author = document.querySelector('#book-author').value;

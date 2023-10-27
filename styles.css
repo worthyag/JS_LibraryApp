@@ -103,8 +103,9 @@ form input {
 }
 
 /* Styling the checkbox. */
-/* #switch-read {
-  height: 0;
-	width: 0;
-  visibility: hidden;
-} */
+.switch-read {
+  transform: scale(2);
+  margin: 8px 16px;
+  accent-color: rgb(32, 133, 99);
+  cursor: pointer;
+}
