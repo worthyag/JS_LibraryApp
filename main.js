@@ -1,18 +1,19 @@
 // Stores all the book objects.
 const myLibrary = [];
 
-// Creates a book object.
-function Book(title, author, pages, read) {
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.read = read;
-}
+// Book class.
+class Book {
+  constructor (title, author, pages, read) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.read = read;
+  }
 
-// Adding the info function via the prototype as by convention.
-Book.prototype.info = function () {
-  return `${this.title} by ${this.author}, ${this.pages} pages, ${(this.read) ? 'read' : 'not read yet'}.`
-};
+  info() {
+    return `${this.title} by ${this.author}, ${this.pages} pages, ${(this.read) ? 'read' : 'not read yet'}.`
+  }
+}
 
 // Adding books to library for testing purposes.
 const book1 = new Book('The Hobbit', 'Yetty', 176,'Not yet read');
